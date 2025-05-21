@@ -8,10 +8,15 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 2. Anaconda – Python 3.7 Installation / Moodle-Code Runner
 
 ## Algorithm
-### Step 1: Import numpy and sys, and create the augmented matrix using np.zeros() and input() for user data.
-### Step 2: Use np.linalg.LU() (or similar built-in LU decomposition) to decompose the augmented matrix into P, L, and U.
-### Step 3: Solve for the solution vector using back substitution with built-in np.linalg.solve() or equivalent.
-### step 4: Print the solution vector using formatted output with print() and the end the program.
+
+### Step 1: Import the numpy module to use the built-in functions for calculation.
+### Step 2: Import the sys module to use the built-in functions.
+### Step 3: Get input from the user for number of rows and add 1 to get the number of columns.
+### Step 4: Use np.zeros() to initialize the matrix as a null matrix.
+### Step 5: Use nested for loops to get input from the user for each element of the matrix.
+### Step 6: Use nested for loops to find the ratio and perform elementary row operations to form an upper triangular matrix.
+### Step 7: Use the back substitution method to find the values of the variables and print them.
+### Step 8: End the program.
 
 ## Program:
 ```python
@@ -52,7 +57,7 @@ for i in range(n):
 
 ## Output:
 
-![image](https://github.com/user-attachments/assets/7271f373-45ec-4d1f-9b79-de645525bd2b)
+![image](https://github.com/user-attachments/assets/342fc036-3615-485b-967e-45da8b15434a)
 
 ## Result:
 Thus the program to find the solution of a matrix using Gaussian Elimination is written and verified using python programming.
