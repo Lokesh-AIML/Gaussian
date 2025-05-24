@@ -9,14 +9,32 @@ To write a program to find the solution of a matrix using Gaussian Elimination.
 
 ## Algorithm
 
-### Step 1: Import the numpy module to use the built-in functions for calculation.
-### Step 2: Import the sys module to use the built-in functions.
-### Step 3: Get input from the user for number of rows and add 1 to get the number of columns.
-### Step 4: Use np.zeros() to initialize the matrix as a null matrix.
-### Step 5: Use nested for loops to get input from the user for each element of the matrix.
-### Step 6: Use nested for loops to find the ratio and perform elementary row operations to form an upper triangular matrix.
-### Step 7: Use the back substitution method to find the values of the variables and print them.
-### Step 8: End the program.
+### Step 1: Start the process and input the number of variables n.
+
+### Step 2: Create an augmented matrix a[n][n+1] and a solution array x[n].
+
+### Step 3: Input all elements of the augmented matrix a from the user.
+
+### Step 4: For each row i from 0 to n-1, check if the pivot element a[i][i] == 0.
+If true, print an error and stop (to avoid division by zero).
+
+### Step 5: For each row j from i+1 to n-1, compute the ratio:
+ratio = a[j][i] / a[i][i].
+
+### Step 6: For each column k from i to n, update the matrix element:
+a[j][k] = a[j][k] - ratio * a[i][k].
+
+### Step 7: After forward elimination is complete, begin back substitution starting from the last row i = n-1 to 0.
+
+### Step 8: Set x[i] = a[i][n] (the constant term of the current equation).
+
+### Step 9: For each column j from i+1 to n-1, update:
+x[i] = x[i] - a[i][j] * x[j].
+
+### Step 10: Divide to get the final value:
+x[i] = x[i] / a[i][i].
+
+### Step 11: Print all values in the solution array x.
 
 ## Program:
 ```python
