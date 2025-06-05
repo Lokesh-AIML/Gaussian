@@ -38,9 +38,6 @@ x[i] = x[i] / a[i][i].
 
 ## Program:
 ```python
-#Program to find the solution of a matrix using Gaussian Elimination.
-#Developed by: Kamlesh.Y
-#RegisterNumber: 212224100029
 import numpy as np
 import sys
 
